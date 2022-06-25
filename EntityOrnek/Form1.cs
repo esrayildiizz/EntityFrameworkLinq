@@ -68,6 +68,16 @@ namespace EntityOrnek
         }
 
 
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            int id=Convert.ToInt32(TxtOgrenciID.Text); 
+            var x = db.TBLOGRENCİ.Find(id); // veri tabanında id ile ilgili alanı bulma.
+
+            db.TBLOGRENCİ.Remove(x);
+            db.SaveChanges();
+            MessageBox.Show("Öğrenci Listeden Silinmiştir.");
+
+        }
 
 
 
@@ -106,6 +116,6 @@ namespace EntityOrnek
 
         }
 
-       
+        
     }
 }
