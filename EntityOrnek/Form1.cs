@@ -73,7 +73,7 @@ namespace EntityOrnek
             int id=Convert.ToInt32(TxtOgrenciID.Text); 
             var x = db.TBLOGRENCİ.Find(id); // veri tabanında id ile ilgili alanı bulma.
 
-            db.TBLOGRENCİ.Remove(x);
+            db.TBLOGRENCİ.Remove(x); //silme işlemi
             db.SaveChanges();
             MessageBox.Show("Öğrenci Listeden Silinmiştir.");
 
