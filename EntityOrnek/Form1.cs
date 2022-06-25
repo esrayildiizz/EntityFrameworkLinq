@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace EntityOrnek
 {
@@ -22,6 +23,40 @@ namespace EntityOrnek
 
         }
 
+       
+        private void BtnDersListele_Click(object sender, EventArgs e)
+        {
+            DbSinavOgrenciEntities db=new DbSinavOgrenciEntities();
+           // DbSinavOgrenciEntities bizim modelimiz ve bu model aracılığıyla db isimli bir nesne oluşturduk.
+
+            dataGridView1.DataSource = db.TBLDERSLER.ToList();
+            //db nesnemizin aracılığıyla da dersler listesini  dataGridView kaynağına akatarmış olduk.
+        }
+
+        private void BtnOgrenciListele_Click(object sender, EventArgs e)
+        {
+            DbSinavOgrenciEntities db= new DbSinavOgrenciEntities();    
+            dataGridView1.DataSource= db.TBLOGRENCİ.ToList();
+
+            //Öğrenci listesi geldiğinde fotoğraf ve tblnotlar kısmının gözükmesini istemiyorum. O halde şunları uygulayalım.
+            dataGridView1.Columns[3].Visible = false; //3 fotoğraflar kısmını temsil ediyor.
+            dataGridView1.Columns[4].Visible = false; //4 tblnotlar kısmını temsil ediyor.
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -31,5 +66,7 @@ namespace EntityOrnek
         {
 
         }
+
+        
     }
 }

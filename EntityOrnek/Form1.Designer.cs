@@ -71,12 +71,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(1, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1493, 159);
+            this.dataGridView1.Size = new System.Drawing.Size(1088, 159);
             this.dataGridView1.TabIndex = 0;
             // 
             // BtnOgrenciListele
@@ -87,6 +88,7 @@
             this.BtnOgrenciListele.TabIndex = 1;
             this.BtnOgrenciListele.Text = "Öğrenci Listele";
             this.BtnOgrenciListele.UseVisualStyleBackColor = true;
+            this.BtnOgrenciListele.Click += new System.EventHandler(this.BtnOgrenciListele_Click);
             // 
             // BtnSil
             // 
@@ -360,6 +362,7 @@
             this.BtnDersListele.TabIndex = 9;
             this.BtnDersListele.Text = "Ders Listele";
             this.BtnDersListele.UseVisualStyleBackColor = true;
+            this.BtnDersListele.Click += new System.EventHandler(this.BtnDersListele_Click);
             // 
             // BtnNotListesi
             // 
