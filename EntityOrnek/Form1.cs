@@ -53,8 +53,37 @@ namespace EntityOrnek
             dataGridView1.DataSource=query.ToList();    
             //dataGridView1.DataSource=db.TBLNOTLAR.ToList();
            
+        }
+
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            TBLOGRENCİ t= new TBLOGRENCİ(); 
+            t.AD=TxtAd.Text;
+            t.SOYAD = TxtSoyad.Text;
+            db.TBLOGRENCİ.Add(t);   
+            db.SaveChanges();   //Değişiklikleri kaydedip bunları veri tabanına yansıt.
+            MessageBox.Show("Öğrenci Listeye Eklenmiştir.");
 
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

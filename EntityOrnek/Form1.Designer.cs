@@ -107,6 +107,7 @@
             this.BtnKaydet.TabIndex = 3;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnBul
             // 
