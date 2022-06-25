@@ -18,6 +18,8 @@ namespace EntityOrnek
             InitializeComponent();
         }
 
+        DbSinavOgrenciEntities db = new DbSinavOgrenciEntities();
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -26,8 +28,8 @@ namespace EntityOrnek
        
         private void BtnDersListele_Click(object sender, EventArgs e)
         {
-            DbSinavOgrenciEntities db=new DbSinavOgrenciEntities();
-           // DbSinavOgrenciEntities bizim modelimiz ve bu model aracılığıyla db isimli bir nesne oluşturduk.
+           
+           // En üstte DbSinavOgrenciEntities bizim modelimiz ve bu model aracılığıyla db isimli bir nesne oluşturduk.
 
             dataGridView1.DataSource = db.TBLDERSLER.ToList();
             //db nesnemizin aracılığıyla da dersler listesini  dataGridView kaynağına akatarmış olduk.
@@ -35,7 +37,7 @@ namespace EntityOrnek
 
         private void BtnOgrenciListele_Click(object sender, EventArgs e)
         {
-            DbSinavOgrenciEntities db= new DbSinavOgrenciEntities();    
+            
             dataGridView1.DataSource= db.TBLOGRENCİ.ToList();
 
             //Öğrenci listesi geldiğinde fotoğraf ve tblnotlar kısmının gözükmesini istemiyorum. O halde şunları uygulayalım.
@@ -44,7 +46,15 @@ namespace EntityOrnek
             
         }
 
+        private void BtnNotListesi_Click(object sender, EventArgs e)
+        {
+            var query = from item in db.TBLNOTLAR
+                        select new { item.NOTID, item.OGR, item.DERS, item.SINAV1,item.SINAV2,item.SINAV3, item.ORTALAMA,item.DURUM};
+            dataGridView1.DataSource=query.ToList();    
+            //dataGridView1.DataSource=db.TBLNOTLAR.ToList();
+           
 
+        }
 
 
 
@@ -67,6 +77,6 @@ namespace EntityOrnek
 
         }
 
-        
+       
     }
 }

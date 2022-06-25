@@ -372,6 +372,7 @@
             this.BtnNotListesi.TabIndex = 10;
             this.BtnNotListesi.Text = "Not Listesi";
             this.BtnNotListesi.UseVisualStyleBackColor = true;
+            this.BtnNotListesi.Click += new System.EventHandler(this.BtnNotListesi_Click);
             // 
             // BtnHesapla
             // 
