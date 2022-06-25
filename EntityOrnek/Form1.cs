@@ -80,7 +80,10 @@ namespace EntityOrnek
         }
 
 
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
 
+        }
 
 
 
@@ -116,6 +119,6 @@ namespace EntityOrnek
 
         }
 
-        
+       
     }
 }

@@ -127,6 +127,7 @@
             this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // groupBox1
             // 
