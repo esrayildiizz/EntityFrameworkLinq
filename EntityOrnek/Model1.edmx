@@ -65,6 +65,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="NOTLİSTESİ" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <EntityContainer Name="DbSinavOgrenciModelStoreContainer">
           <EntitySet Name="TBLDERSLER" EntityType="Self.TBLDERSLER" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TBLKULUPLER" EntityType="Self.TBLKULUPLER" Schema="dbo" store:Type="Tables" />
@@ -153,6 +154,7 @@
             <End Role="TBLNOTLAR" EntitySet="TBLNOTLAR" />
           </AssociationSet>
           <EntitySet Name="TBLKULUPLER" EntityType="DbSinavOgrenciModel.TBLKULUPLER" />
+          <FunctionImport Name="NOTLİSTESİ" ReturnType="Collection(DbSinavOgrenciModel.NOTLİSTESİ_Result)" />
         </EntityContainer>
         <EntityType Name="TBLKULUPLER">
           <Key>
@@ -161,6 +163,17 @@
           <Property Name="KULUPID" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="KULUPAD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
+        <ComplexType Name="NOTLİSTESİ_Result">
+          <Property Type="Int32" Name="NOTID" Nullable="false" />
+          <Property Type="String" Name="AD_SOYAD" Nullable="true" MaxLength="41" />
+          <Property Type="String" Name="DERSAD" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="DERS" Nullable="true" />
+          <Property Type="Int16" Name="SINAV1" Nullable="true" />
+          <Property Type="Int16" Name="SINAV2" Nullable="true" />
+          <Property Type="Int16" Name="SINAV3" Nullable="true" />
+          <Property Type="Decimal" Name="ORTALAMA" Nullable="true" Precision="5" Scale="2" />
+          <Property Type="Boolean" Name="DURUM" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -207,6 +220,21 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="NOTLİSTESİ" FunctionName="DbSinavOgrenciModel.Store.NOTLİSTESİ">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="DbSinavOgrenciModel.NOTLİSTESİ_Result">
+                <ScalarProperty Name="NOTID" ColumnName="NOTID" />
+                <ScalarProperty Name="AD_SOYAD" ColumnName="AD-SOYAD" />
+                <ScalarProperty Name="DERSAD" ColumnName="DERSAD" />
+                <ScalarProperty Name="DERS" ColumnName="DERS" />
+                <ScalarProperty Name="SINAV1" ColumnName="SINAV1" />
+                <ScalarProperty Name="SINAV2" ColumnName="SINAV2" />
+                <ScalarProperty Name="SINAV3" ColumnName="SINAV3" />
+                <ScalarProperty Name="ORTALAMA" ColumnName="ORTALAMA" />
+                <ScalarProperty Name="DURUM" ColumnName="DURUM" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

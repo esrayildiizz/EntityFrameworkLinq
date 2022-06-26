@@ -96,6 +96,19 @@ namespace EntityOrnek
 
 
 
+        // Buraya rosedür komutlarını eklemeden önce sql de komutları şu şekilde yazdık.
+
+        //CREATE PROCEDURE NOTLİSTESİ
+        // AS
+        //select   NOTID ,AD+ ' ' + SOYAD AS 'AD-SOYAD' , DERSAD, DERS, SINAV1, SINAV2, SINAV3, ORTALAMA, DURUM from TBLNOTLAR inner join TBLOGRENCİ
+        //ON TBLOGRENCİ.ID=TBLNOTLAR.OGR
+         //inner join TBLDERSLER ON TBLDERSLER.DERSID=TBLNOTLAR.DERS
+        private void BtnProsedur_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.NOTLİSTESİ();
+        }
+
+
 
 
 

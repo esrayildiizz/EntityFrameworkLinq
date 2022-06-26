@@ -12,6 +12,8 @@ namespace EntityOrnek
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class DbSinavOgrenciEntities : DbContext
     {
@@ -29,5 +31,10 @@ namespace EntityOrnek
         public virtual DbSet<TBLNOTLAR> TBLNOTLAR { get; set; }
         public virtual DbSet<TBLOGRENCİ> TBLOGRENCİ { get; set; }
         public virtual DbSet<TBLKULUPLER> TBLKULUPLER { get; set; }
+    
+        public virtual ObjectResult<NOTLİSTESİ_Result> NOTLİSTESİ()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<NOTLİSTESİ_Result>("NOTLİSTESİ");
+        }
     }
 }

@@ -49,6 +49,10 @@
             this.TxtDersId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.BtnNotGuncelle = new System.Windows.Forms.Button();
+            this.BtnHesapla = new System.Windows.Forms.Button();
+            this.TxtDurum = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.TxtOrtalama = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TxtSinav3 = new System.Windows.Forms.TextBox();
@@ -57,12 +61,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.TxtSinav1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.TxtDurum = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.BtnDersListele = new System.Windows.Forms.Button();
             this.BtnNotListesi = new System.Windows.Forms.Button();
-            this.BtnHesapla = new System.Windows.Forms.Button();
-            this.BtnNotGuncelle = new System.Windows.Forms.Button();
+            this.BtnProsedur = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -276,6 +277,40 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Notlar";
             // 
+            // BtnNotGuncelle
+            // 
+            this.BtnNotGuncelle.Location = new System.Drawing.Point(66, 387);
+            this.BtnNotGuncelle.Name = "BtnNotGuncelle";
+            this.BtnNotGuncelle.Size = new System.Drawing.Size(240, 44);
+            this.BtnNotGuncelle.TabIndex = 25;
+            this.BtnNotGuncelle.Text = "Sınav Notu Güncelle";
+            this.BtnNotGuncelle.UseVisualStyleBackColor = true;
+            // 
+            // BtnHesapla
+            // 
+            this.BtnHesapla.Location = new System.Drawing.Point(95, 327);
+            this.BtnHesapla.Name = "BtnHesapla";
+            this.BtnHesapla.Size = new System.Drawing.Size(188, 44);
+            this.BtnHesapla.TabIndex = 24;
+            this.BtnHesapla.Text = "Hesapla";
+            this.BtnHesapla.UseVisualStyleBackColor = true;
+            // 
+            // TxtDurum
+            // 
+            this.TxtDurum.Location = new System.Drawing.Point(171, 245);
+            this.TxtDurum.Name = "TxtDurum";
+            this.TxtDurum.Size = new System.Drawing.Size(100, 30);
+            this.TxtDurum.TabIndex = 23;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(66, 245);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(95, 25);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "DURUM :";
+            // 
             // TxtOrtalama
             // 
             this.TxtOrtalama.Location = new System.Drawing.Point(171, 201);
@@ -341,22 +376,6 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "SINAV 1 :";
             // 
-            // TxtDurum
-            // 
-            this.TxtDurum.Location = new System.Drawing.Point(171, 245);
-            this.TxtDurum.Name = "TxtDurum";
-            this.TxtDurum.Size = new System.Drawing.Size(100, 30);
-            this.TxtDurum.TabIndex = 23;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(66, 245);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(95, 25);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "DURUM :";
-            // 
             // BtnDersListele
             // 
             this.BtnDersListele.Location = new System.Drawing.Point(24, 496);
@@ -377,29 +396,22 @@
             this.BtnNotListesi.UseVisualStyleBackColor = true;
             this.BtnNotListesi.Click += new System.EventHandler(this.BtnNotListesi_Click);
             // 
-            // BtnHesapla
+            // BtnProsedur
             // 
-            this.BtnHesapla.Location = new System.Drawing.Point(95, 327);
-            this.BtnHesapla.Name = "BtnHesapla";
-            this.BtnHesapla.Size = new System.Drawing.Size(188, 44);
-            this.BtnHesapla.TabIndex = 24;
-            this.BtnHesapla.Text = "Hesapla";
-            this.BtnHesapla.UseVisualStyleBackColor = true;
-            // 
-            // BtnNotGuncelle
-            // 
-            this.BtnNotGuncelle.Location = new System.Drawing.Point(66, 387);
-            this.BtnNotGuncelle.Name = "BtnNotGuncelle";
-            this.BtnNotGuncelle.Size = new System.Drawing.Size(240, 44);
-            this.BtnNotGuncelle.TabIndex = 25;
-            this.BtnNotGuncelle.Text = "Sınav Notu Güncelle";
-            this.BtnNotGuncelle.UseVisualStyleBackColor = true;
+            this.BtnProsedur.Location = new System.Drawing.Point(24, 617);
+            this.BtnProsedur.Name = "BtnProsedur";
+            this.BtnProsedur.Size = new System.Drawing.Size(188, 44);
+            this.BtnProsedur.TabIndex = 11;
+            this.BtnProsedur.Text = "Prosedür";
+            this.BtnProsedur.UseVisualStyleBackColor = true;
+            this.BtnProsedur.Click += new System.EventHandler(this.BtnProsedur_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1086, 703);
+            this.Controls.Add(this.BtnProsedur);
             this.Controls.Add(this.BtnNotListesi);
             this.Controls.Add(this.BtnDersListele);
             this.Controls.Add(this.groupBox3);
@@ -464,6 +476,7 @@
         private System.Windows.Forms.Button BtnNotListesi;
         private System.Windows.Forms.Button BtnNotGuncelle;
         private System.Windows.Forms.Button BtnHesapla;
+        private System.Windows.Forms.Button BtnProsedur;
     }
 }
 
