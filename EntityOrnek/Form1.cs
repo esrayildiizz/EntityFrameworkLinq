@@ -90,8 +90,9 @@ namespace EntityOrnek
             x.FOTOGRAF = TxtFoto.Text;
 
             db.SaveChanges(); //Değişiklikleri kaydedip bunları veri tabanına yansıt.
-            MessageBox.Show("Öğrenci Listesi Güncellenmiştir.");
+            MessageBox.Show("Öğrenci Listesi Güncellenmiştir."); //Ekranda gözükecek olan kutucuğun içinde yazan.
         }
+
 
 
 
