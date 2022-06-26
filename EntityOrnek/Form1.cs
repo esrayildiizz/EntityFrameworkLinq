@@ -74,7 +74,7 @@ namespace EntityOrnek
             var x = db.TBLOGRENCİ.Find(id); // veri tabanında id ile ilgili alanı bulma.
 
             db.TBLOGRENCİ.Remove(x); //silme işlemi
-            db.SaveChanges();
+            db.SaveChanges(); //Değişiklikleri kaydedip bunları veri tabanına yansıt.
             MessageBox.Show("Öğrenci Listeden Silinmiştir.");
 
         }
@@ -82,7 +82,15 @@ namespace EntityOrnek
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {
+            int id = Convert.ToInt32(TxtOgrenciID.Text);
+            var x = db.TBLOGRENCİ.Find(id);
 
+            x.AD=TxtAd.Text;
+            x.SOYAD=TxtSoyad.Text;
+            x.FOTOGRAF = TxtFoto.Text;
+
+            db.SaveChanges(); //Değişiklikleri kaydedip bunları veri tabanına yansıt.
+            MessageBox.Show("Öğrenci Listesi Güncellenmiştir.");
         }
 
 
