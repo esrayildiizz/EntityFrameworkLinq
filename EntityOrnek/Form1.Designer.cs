@@ -186,6 +186,7 @@
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(100, 30);
             this.TxtAd.TabIndex = 17;
+            this.TxtAd.TextChanged += new System.EventHandler(this.TxtAd_TextChanged);
             // 
             // label2
             // 
