@@ -110,6 +110,13 @@ namespace EntityOrnek
 
 
 
+        private void BtnBul_Click(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = db.TBLOGRENCİ.Where(x => x.AD==TxtAd.Text | x.SOYAD==TxtSoyad.Text).ToList();
+        }
+
+
+
 
 
 

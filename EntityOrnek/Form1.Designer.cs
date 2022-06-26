@@ -119,6 +119,7 @@
             this.BtnBul.TabIndex = 4;
             this.BtnBul.Text = "Bul";
             this.BtnBul.UseVisualStyleBackColor = true;
+            this.BtnBul.Click += new System.EventHandler(this.BtnBul_Click);
             // 
             // BtnGuncelle
             // 
