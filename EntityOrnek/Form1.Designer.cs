@@ -71,6 +71,7 @@
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton7 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -438,7 +439,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(988, 239);
+            this.radioButton2.Location = new System.Drawing.Point(988, 229);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(243, 29);
             this.radioButton2.TabIndex = 14;
@@ -449,7 +450,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(988, 274);
+            this.radioButton3.Location = new System.Drawing.Point(988, 264);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(117, 29);
             this.radioButton3.TabIndex = 15;
@@ -460,7 +461,7 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(988, 309);
+            this.radioButton4.Location = new System.Drawing.Point(988, 299);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(211, 29);
             this.radioButton4.TabIndex = 16;
@@ -471,7 +472,7 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(988, 344);
+            this.radioButton5.Location = new System.Drawing.Point(988, 337);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(212, 29);
             this.radioButton5.TabIndex = 17;
@@ -482,7 +483,7 @@
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(987, 376);
+            this.radioButton6.Location = new System.Drawing.Point(988, 370);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(175, 29);
             this.radioButton6.TabIndex = 18;
@@ -490,11 +491,23 @@
             this.radioButton6.Text = "Adı A ile Bitenler";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
+            // radioButton7
+            // 
+            this.radioButton7.AutoSize = true;
+            this.radioButton7.Location = new System.Drawing.Point(988, 405);
+            this.radioButton7.Name = "radioButton7";
+            this.radioButton7.Size = new System.Drawing.Size(159, 29);
+            this.radioButton7.TabIndex = 19;
+            this.radioButton7.TabStop = true;
+            this.radioButton7.Text = "Değer Var Mı?";
+            this.radioButton7.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
@@ -576,6 +589,7 @@
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton7;
     }
 }
 

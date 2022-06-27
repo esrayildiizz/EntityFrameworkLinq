@@ -181,6 +181,16 @@ namespace EntityOrnek
                 dataGridView1.DataSource = liste6.ToList();
             }
 
+            if (radioButton7.Checked == true)
+            {
+                //TBLKULUPLER'de değer varmı varsa ekranda true yazsın yoksa ekranda false yazsın.
+                //TBLKULUPLER yazdığımızda ekranda false yazıyor.Çünkü kulupler tablosuna değer girişi yapmadık.
+                //TBLOGRENCİ yazdığımızda ekranda true yazıyor.
+                bool deger = db.TBLKULUPLER.Any();
+                MessageBox.Show(deger.ToString());
+
+            }
+
         }
 
     }
