@@ -193,8 +193,23 @@ namespace EntityOrnek
 
             if(radioButton8.Checked == true)
             {
+                //Count =say demek.
                 int toplam = db.TBLOGRENCİ.Count();
                 MessageBox.Show(toplam.ToString(), "Toplam Öğrenci Sayısı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if( radioButton9.Checked == true)
+            {
+                //Sum= topla demek.
+                var toplam = db.TBLNOTLAR.Sum(x => x.SINAV1);
+                MessageBox.Show(toplam.ToString(), "SINAV1 PUAN TOPLAM", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            if (radioButton10.Checked == true)
+            {
+                //Average=ortalama al deme.
+                var ortalama = db.TBLNOTLAR.Average(x => x.SINAV1);
+                MessageBox.Show(ortalama.ToString(), "SINAV1 PUAN ORTALAMA", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }

@@ -73,6 +73,8 @@
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -429,7 +431,7 @@
             // 
             // BtnLinqEntity
             // 
-            this.BtnLinqEntity.Location = new System.Drawing.Point(1029, 532);
+            this.BtnLinqEntity.Location = new System.Drawing.Point(1029, 601);
             this.BtnLinqEntity.Name = "BtnLinqEntity";
             this.BtnLinqEntity.Size = new System.Drawing.Size(170, 60);
             this.BtnLinqEntity.TabIndex = 13;
@@ -514,11 +516,35 @@
             this.radioButton8.Text = "Toplam Öğrenci Sayısı";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(988, 476);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(216, 29);
+            this.radioButton9.TabIndex = 21;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "Sınav1 Toplam Puan";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(988, 506);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(230, 29);
+            this.radioButton10.TabIndex = 22;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Sınav1 Ortalama Puan";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.radioButton10);
+            this.Controls.Add(this.radioButton9);
             this.Controls.Add(this.radioButton8);
             this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
@@ -604,6 +630,8 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
     }
 }
 
