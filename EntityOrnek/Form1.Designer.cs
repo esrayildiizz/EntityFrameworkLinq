@@ -49,7 +49,7 @@
             this.TxtDersId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnNotGuncelle = new System.Windows.Forms.Button();
+            this.BtnJoin = new System.Windows.Forms.Button();
             this.BtnHesapla = new System.Windows.Forms.Button();
             this.TxtDurum = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -271,7 +271,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnNotGuncelle);
+            this.groupBox3.Controls.Add(this.BtnJoin);
             this.groupBox3.Controls.Add(this.BtnHesapla);
             this.groupBox3.Controls.Add(this.TxtDurum);
             this.groupBox3.Controls.Add(this.label11);
@@ -290,14 +290,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Notlar";
             // 
-            // BtnNotGuncelle
+            // BtnJoin
             // 
-            this.BtnNotGuncelle.Location = new System.Drawing.Point(66, 387);
-            this.BtnNotGuncelle.Name = "BtnNotGuncelle";
-            this.BtnNotGuncelle.Size = new System.Drawing.Size(240, 44);
-            this.BtnNotGuncelle.TabIndex = 25;
-            this.BtnNotGuncelle.Text = "Sınav Notu Güncelle";
-            this.BtnNotGuncelle.UseVisualStyleBackColor = true;
+            this.BtnJoin.Location = new System.Drawing.Point(66, 387);
+            this.BtnJoin.Name = "BtnJoin";
+            this.BtnJoin.Size = new System.Drawing.Size(240, 44);
+            this.BtnJoin.TabIndex = 25;
+            this.BtnJoin.Text = "Join İle Getir";
+            this.BtnJoin.UseVisualStyleBackColor = true;
+            this.BtnJoin.Click += new System.EventHandler(this.BtnJoin_Click);
             // 
             // BtnHesapla
             // 
@@ -618,7 +619,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnDersListele;
         private System.Windows.Forms.Button BtnNotListesi;
-        private System.Windows.Forms.Button BtnNotGuncelle;
+        private System.Windows.Forms.Button BtnJoin;
         private System.Windows.Forms.Button BtnHesapla;
         private System.Windows.Forms.Button BtnProsedur;
         private System.Windows.Forms.RadioButton radioButton1;

@@ -214,6 +214,21 @@ namespace EntityOrnek
 
         }
 
+        private void BtnJoin_Click(object sender, EventArgs e)
+        {
+            var sorgu = from d1 in db.TBLNOTLAR
+                        join d2 in db.TBLOGRENCİ
+                        on d1.OGR equals d2.ID
+                        select new
+                        {
+                            Öğrenci=d2.AD,
+                            SINAV1=d1.SINAV1,
+                            SINAV2=d1.SINAV2,
+                            SINAV3=d1.SINAV3,
+
+                        };
+            dataGridView1.DataSource = sorgu.ToList();
+        }
     }
 
 
