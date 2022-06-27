@@ -156,6 +156,13 @@ namespace EntityOrnek
                 List<TBLOGRENCİ> liste3=db.TBLOGRENCİ.OrderBy(x=>x.AD).Take(3).ToList();
                 dataGridView1.DataSource = liste3.ToList();
             }
+
+            if (radioButton4.Checked == true)
+            {
+                //ID ye göre veri getir.
+                List<TBLOGRENCİ> liste4 = db.TBLOGRENCİ.Where(x => x.ID == 5).ToList();
+                dataGridView1.DataSource=liste4.ToList();
+            }
                 
         }
 
