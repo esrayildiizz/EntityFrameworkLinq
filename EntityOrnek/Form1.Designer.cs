@@ -69,6 +69,8 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -333,7 +335,6 @@
             this.label5.Size = new System.Drawing.Size(135, 25);
             this.label5.TabIndex = 20;
             this.label5.Text = "ORTALAMA :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // TxtSinav3
             // 
@@ -426,7 +427,7 @@
             // 
             // BtnLinqEntity
             // 
-            this.BtnLinqEntity.Location = new System.Drawing.Point(1033, 451);
+            this.BtnLinqEntity.Location = new System.Drawing.Point(1039, 480);
             this.BtnLinqEntity.Name = "BtnLinqEntity";
             this.BtnLinqEntity.Size = new System.Drawing.Size(170, 60);
             this.BtnLinqEntity.TabIndex = 13;
@@ -467,11 +468,35 @@
             this.radioButton4.Text = "ID\'ye Göre Veri Getir";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Location = new System.Drawing.Point(988, 344);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(212, 29);
+            this.radioButton5.TabIndex = 17;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Adı A ile Başlayanlar";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Location = new System.Drawing.Point(987, 376);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(175, 29);
+            this.radioButton6.TabIndex = 18;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Adı A ile Bitenler";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.radioButton5);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -549,6 +574,8 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton6;
     }
 }
 
