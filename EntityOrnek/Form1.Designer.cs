@@ -72,6 +72,7 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
+            this.radioButton8 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -428,7 +429,7 @@
             // 
             // BtnLinqEntity
             // 
-            this.BtnLinqEntity.Location = new System.Drawing.Point(1039, 480);
+            this.BtnLinqEntity.Location = new System.Drawing.Point(1029, 532);
             this.BtnLinqEntity.Name = "BtnLinqEntity";
             this.BtnLinqEntity.Size = new System.Drawing.Size(170, 60);
             this.BtnLinqEntity.TabIndex = 13;
@@ -502,11 +503,23 @@
             this.radioButton7.Text = "Değer Var Mı?";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
+            // radioButton8
+            // 
+            this.radioButton8.AutoSize = true;
+            this.radioButton8.Location = new System.Drawing.Point(988, 441);
+            this.radioButton8.Name = "radioButton8";
+            this.radioButton8.Size = new System.Drawing.Size(231, 29);
+            this.radioButton8.TabIndex = 20;
+            this.radioButton8.TabStop = true;
+            this.radioButton8.Text = "Toplam Öğrenci Sayısı";
+            this.radioButton8.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.radioButton8);
             this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
             this.Controls.Add(this.radioButton5);
@@ -590,6 +603,7 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton radioButton8;
     }
 }
 

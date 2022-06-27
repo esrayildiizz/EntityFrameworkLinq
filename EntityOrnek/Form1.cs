@@ -187,8 +187,14 @@ namespace EntityOrnek
                 //TBLKULUPLER yazdığımızda ekranda false yazıyor.Çünkü kulupler tablosuna değer girişi yapmadık.
                 //TBLOGRENCİ yazdığımızda ekranda true yazıyor.
                 bool deger = db.TBLKULUPLER.Any();
-                MessageBox.Show(deger.ToString());
+                MessageBox.Show(deger.ToString(),"Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
+            }
+
+            if(radioButton8.Checked == true)
+            {
+                int toplam = db.TBLOGRENCİ.Count();
+                MessageBox.Show(toplam.ToString(), "Toplam Öğrenci Sayısı", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
         }
