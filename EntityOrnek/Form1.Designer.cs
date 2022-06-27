@@ -66,6 +66,8 @@
             this.BtnProsedur = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.BtnLinqEntity = new System.Windows.Forms.Button();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -423,7 +425,7 @@
             // 
             // BtnLinqEntity
             // 
-            this.BtnLinqEntity.Location = new System.Drawing.Point(1020, 260);
+            this.BtnLinqEntity.Location = new System.Drawing.Point(1027, 354);
             this.BtnLinqEntity.Name = "BtnLinqEntity";
             this.BtnLinqEntity.Size = new System.Drawing.Size(170, 60);
             this.BtnLinqEntity.TabIndex = 13;
@@ -431,11 +433,35 @@
             this.BtnLinqEntity.UseVisualStyleBackColor = true;
             this.BtnLinqEntity.Click += new System.EventHandler(this.BtnLinqEntity_Click);
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(988, 239);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(243, 29);
+            this.radioButton2.TabIndex = 14;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Ada Göre Sırala (Z-->A)";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(988, 290);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(117, 29);
+            this.radioButton3.TabIndex = 15;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "İlk 3 Kayıt";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.BtnLinqEntity);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.BtnProsedur);
@@ -507,6 +533,8 @@
         private System.Windows.Forms.Button BtnProsedur;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button BtnLinqEntity;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
 

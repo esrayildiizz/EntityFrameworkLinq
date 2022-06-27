@@ -137,10 +137,26 @@ namespace EntityOrnek
         {
             if (radioButton1.Checked == true) //Eğerki radiobutton işaretlenmiş ise ;
             {
+                //Asc-Ascending  (A dan Zye)
                List<TBLOGRENCİ> liste1=db.TBLOGRENCİ.OrderBy(x => x.AD).ToList();
                 //Burada ad'a göre a dan z ye sıralama işlemi yapıldı.
                dataGridView1.DataSource = liste1.ToList();
             }
+
+            if (radioButton2.Checked == true)
+            {
+                //Dsc-Descending (Z den A ya)
+                List<TBLOGRENCİ> liste2 = db.TBLOGRENCİ.OrderByDescending(x => x.AD).ToList();
+                dataGridView1.DataSource=liste2.ToList();   
+            }
+
+            if (radioButton3.Checked == true)
+            {
+                //İlk 3 kaydın gelmesi için gerekli komutlar.
+                List<TBLOGRENCİ> liste3=db.TBLOGRENCİ.OrderBy(x=>x.AD).Take(3).ToList();
+                dataGridView1.DataSource = liste3.ToList();
+            }
+                
         }
 
 
