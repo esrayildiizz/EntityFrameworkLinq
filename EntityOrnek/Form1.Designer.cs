@@ -64,6 +64,8 @@
             this.BtnDersListele = new System.Windows.Forms.Button();
             this.BtnNotListesi = new System.Windows.Forms.Button();
             this.BtnProsedur = new System.Windows.Forms.Button();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.BtnLinqEntity = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -408,11 +410,34 @@
             this.BtnProsedur.UseVisualStyleBackColor = true;
             this.BtnProsedur.Click += new System.EventHandler(this.BtnProsedur_Click);
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(988, 194);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(243, 29);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Ada Göre Sırala (A-->Z)";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // BtnLinqEntity
+            // 
+            this.BtnLinqEntity.Location = new System.Drawing.Point(1020, 260);
+            this.BtnLinqEntity.Name = "BtnLinqEntity";
+            this.BtnLinqEntity.Size = new System.Drawing.Size(170, 60);
+            this.BtnLinqEntity.TabIndex = 13;
+            this.BtnLinqEntity.Text = "Linq Entity";
+            this.BtnLinqEntity.UseVisualStyleBackColor = true;
+            this.BtnLinqEntity.Click += new System.EventHandler(this.BtnLinqEntity_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 703);
+            this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.Controls.Add(this.BtnLinqEntity);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.BtnProsedur);
             this.Controls.Add(this.BtnNotListesi);
             this.Controls.Add(this.BtnDersListele);
@@ -438,6 +463,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -479,6 +505,8 @@
         private System.Windows.Forms.Button BtnNotGuncelle;
         private System.Windows.Forms.Button BtnHesapla;
         private System.Windows.Forms.Button BtnProsedur;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Button BtnLinqEntity;
     }
 }
 

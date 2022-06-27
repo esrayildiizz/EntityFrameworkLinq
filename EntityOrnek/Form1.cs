@@ -133,7 +133,15 @@ namespace EntityOrnek
 
 
 
-
+        private void BtnLinqEntity_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true) //Eğerki radiobutton işaretlenmiş ise ;
+            {
+               List<TBLOGRENCİ> liste1=db.TBLOGRENCİ.OrderBy(x => x.AD).ToList();
+                //Burada ad'a göre a dan z ye sıralama işlemi yapıldı.
+               dataGridView1.DataSource = liste1.ToList();
+            }
+        }
 
 
 
@@ -164,6 +172,6 @@ namespace EntityOrnek
 
         }
 
-       
+      
     }
 }
