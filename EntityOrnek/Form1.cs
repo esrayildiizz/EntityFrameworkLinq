@@ -118,14 +118,17 @@ namespace EntityOrnek
 
         private void TxtAd_TextChanged(object sender, EventArgs e)
         {
+
             string aranan = TxtAd.Text;
             var degerler = from item in db.TBLOGRENCİ
                            where item.AD.Contains(aranan)
                            select item;
             dataGridView1.DataSource = degerler.ToList();
 
+            
             //aranan textbox ıma eşit olan item ları getir bu item ları değerlere aktar daha sonra datagrid de bu değerleri listele.
 
+            //Ogrenci de ad kısmına ne yazarsam onunla es deger olan ifadeler dataGridView1 de önümüze gelecektir.(Harf bile olsa es deger karşımıza gelir.)      
         }
 
 
