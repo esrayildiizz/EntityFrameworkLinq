@@ -221,10 +221,12 @@ namespace EntityOrnek
                         on d1.OGR equals d2.ID
                         select new
                         {
-                            Öğrenci=d2.AD,
+                            ÖğrenciAd=d2.AD,
+                            ÖğrenciSoyad=d2.SOYAD,
                             SINAV1=d1.SINAV1,
                             SINAV2=d1.SINAV2,
                             SINAV3=d1.SINAV3,
+                            Ortalama=d1.ORTALAMA,
 
                         };
             dataGridView1.DataSource = sorgu.ToList();
