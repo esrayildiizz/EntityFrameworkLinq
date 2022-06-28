@@ -82,6 +82,10 @@
     <Compile Include="Migrations\202206281518217_CreateMusteriSehirColumnInMusterisTable.designer.cs">
       <DependentUpon>202206281518217_CreateMusteriSehirColumnInMusterisTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.cs" />
+    <Compile Include="Migrations\202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.designer.cs">
+      <DependentUpon>202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206281518217_CreateMusteriSehirColumnInMusterisTable.resx">
       <DependentUpon>202206281518217_CreateMusteriSehirColumnInMusterisTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.resx">
+      <DependentUpon>202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
