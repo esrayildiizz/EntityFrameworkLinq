@@ -12,7 +12,7 @@ namespace EntityCodeFirst.Entity
         [Key]
         public int KategoriID { get; set; } 
         public string KategoriDetay { get; set; }  
-        public string Kategoriİsim { get; set; }
+        public string KategoriAdi { get; set; }
 
 
         //Kategorilerin içerisinde birden çok ürün yer alabilir.
