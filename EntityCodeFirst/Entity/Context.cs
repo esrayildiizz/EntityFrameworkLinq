@@ -7,8 +7,9 @@ using System.Data.Entity;
 
 namespace EntityCodeFirst.Entity
 {
-    internal class Context
+    internal class Context:DbContext
     {
-
+        //DbSet: Veri tabanını ayarla demek.
+        public DbSet<Urunler> Urunlers { get; set; }
     }
 }
