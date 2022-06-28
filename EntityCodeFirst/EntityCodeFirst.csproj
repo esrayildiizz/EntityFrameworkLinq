@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Entity\Context.cs" />
     <Compile Include="Entity\Kategori.cs" />
+    <Compile Include="Entity\Musteri.cs" />
     <Compile Include="Entity\Urunler.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -73,6 +74,10 @@
     <Compile Include="Migrations\202206281254048_AddMigration.designer.cs">
       <DependentUpon>202206281254048_AddMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206281509428_CreateMusterisTable.cs" />
+    <Compile Include="Migrations\202206281509428_CreateMusterisTable.designer.cs">
+      <DependentUpon>202206281509428_CreateMusterisTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206281254048_AddMigration.resx">
       <DependentUpon>202206281254048_AddMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206281509428_CreateMusterisTable.resx">
+      <DependentUpon>202206281509428_CreateMusterisTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
