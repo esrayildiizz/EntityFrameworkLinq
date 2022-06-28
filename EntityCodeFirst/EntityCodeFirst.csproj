@@ -65,10 +65,25 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206281142558_InitialCreate.cs" />
+    <Compile Include="Migrations\202206281142558_InitialCreate.designer.cs">
+      <DependentUpon>202206281142558_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202206281254048_AddMigration.cs" />
+    <Compile Include="Migrations\202206281254048_AddMigration.designer.cs">
+      <DependentUpon>202206281254048_AddMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206281142558_InitialCreate.resx">
+      <DependentUpon>202206281142558_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206281254048_AddMigration.resx">
+      <DependentUpon>202206281254048_AddMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
