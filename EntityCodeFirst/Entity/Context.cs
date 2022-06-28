@@ -11,5 +11,8 @@ namespace EntityCodeFirst.Entity
     {
         //DbSet: Veri tabanını ayarla demek.
         public DbSet<Urunler> Urunlers { get; set; }
+        public DbSet<Kategori> Kategoris { get; set; }    
     }
+
+
 }
