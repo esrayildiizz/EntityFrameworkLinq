@@ -15,6 +15,10 @@ namespace EntityCodeFirst.Entity
         public string UrunMarka { get; set; }
         public string UrunKategori { get; set; }    
         public int UrunStok { get; set; }   
+
+        //Bir ürünün sadece bir kategorisi olucak.
+        //O yüzden aşağıdaki gibi yazdık.
+        public Kategori Kategori { get; set; }  
         
 
     }
