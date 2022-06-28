@@ -86,10 +86,6 @@
     <Compile Include="Migrations\202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.designer.cs">
       <DependentUpon>202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206281629597_RenameKategoriAdTOKategoriDetayKategorisTable.cs" />
-    <Compile Include="Migrations\202206281629597_RenameKategoriAdTOKategoriDetayKategorisTable.designer.cs">
-      <DependentUpon>202206281629597_RenameKategoriAdTOKategoriDetayKategorisTable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\202206281632219_CreateKategoriİsimColumnKategorisTable.cs" />
     <Compile Include="Migrations\202206281632219_CreateKategoriİsimColumnKategorisTable.designer.cs">
       <DependentUpon>202206281632219_CreateKategoriİsimColumnKategorisTable.cs</DependentUpon>
@@ -114,9 +110,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.resx">
       <DependentUpon>202206281530171_RenameMusteriSoyadToMusteriUnvanInMusterisTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206281629597_RenameKategoriAdTOKategoriDetayKategorisTable.resx">
-      <DependentUpon>202206281629597_RenameKategoriAdTOKategoriDetayKategorisTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206281632219_CreateKategoriİsimColumnKategorisTable.resx">
       <DependentUpon>202206281632219_CreateKategoriİsimColumnKategorisTable.cs</DependentUpon>
