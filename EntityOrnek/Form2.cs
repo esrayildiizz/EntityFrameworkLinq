@@ -48,6 +48,13 @@ namespace EntityOrnek
                 var degerler = db.TBLOGRENCİ.Select(x => new { Soyadı = x.SOYAD });
                 dataGridView1.DataSource = degerler.ToList();
             }
+
+            if (radioButton5.Checked == true)
+            {
+                //Adı büyük soyadı küçük geir.
+                var degerler = db.TBLOGRENCİ.Select(x => new {Ad=x.AD.ToUpper(), Soyad = x.SOYAD.ToLower() });
+                dataGridView1.DataSource = degerler.ToList();
+            }
         }
     }
 }
