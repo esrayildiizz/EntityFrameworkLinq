@@ -42,7 +42,12 @@ namespace EntityOrnek
                 dataGridView1.DataSource = degerler.ToList();
             }
 
-
+            if (radioButton4.Checked == true)
+            {
+                //sadece soyadı getir. new tanımladık.
+                var degerler = db.TBLOGRENCİ.Select(x => new { Soyadı = x.SOYAD });
+                dataGridView1.DataSource = degerler.ToList();
+            }
         }
     }
 }
