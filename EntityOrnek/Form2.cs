@@ -59,9 +59,39 @@ namespace EntityOrnek
             if (radioButton6.Checked == true)
             {
                 //Adı büyük soyadı küçük getir.ve şartımşu ali haricindekileri getir.
-                var degerler = db.TBLOGRENCİ.Select(x => new { Ad = x.AD.ToUpper(), Soyad = x.SOYAD.ToLower() }).Where(x=>x.Ad !="ali");
+                var degerler = db.TBLOGRENCİ.Select(x => new 
+                { Ad = x.AD.ToUpper(), Soyad = x.SOYAD.ToLower() }).Where(x=>x.Ad !="ali");
                 dataGridView1.DataSource = degerler.ToList();
             }
+
+
+            if (radioButton7.Checked == true)
+            {
+                /*Veri tabanında[ update tblnotlar set durum=1 where ortalama>=50]
+                * yazdıktan sonra 50 den yüksek ise geçti düşük ise kaldı komutları aşağıdaki gibi yazdık.
+                */
+                var degerler = db.TBLNOTLAR.Select(x => new
+                {
+                    Ad = x.OGR,
+                    Ortalama = x.ORTALAMA,
+                    Durumu=x.DURUM==true ? "Geçti":"Kaldı"
+                });
+                dataGridView1.DataSource = degerler.ToList();
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
     }
 }
