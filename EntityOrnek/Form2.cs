@@ -91,12 +91,15 @@ namespace EntityOrnek
                  dataGridView1.DataSource = degerler.ToList();
             }
 
+            if(radioButton9.Checked == true)
+            {
+                //ilk 3 degeri getir.
+                var degerler = db.TBLOGRENCİ.OrderBy(x => x.ID).Take(3);
+                dataGridView1.DataSource = degerler.ToList();
+            }
 
 
-
-
-
-
+           
 
 
 

@@ -40,6 +40,10 @@
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +70,7 @@
             // 
             // BtnLinqEntity
             // 
-            this.BtnLinqEntity.Location = new System.Drawing.Point(309, 383);
+            this.BtnLinqEntity.Location = new System.Drawing.Point(616, 379);
             this.BtnLinqEntity.Name = "BtnLinqEntity";
             this.BtnLinqEntity.Size = new System.Drawing.Size(131, 46);
             this.BtnLinqEntity.TabIndex = 2;
@@ -167,11 +171,59 @@
             this.radioButton8.Text = "Birleştir";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
+            // radioButton9
+            // 
+            this.radioButton9.AutoSize = true;
+            this.radioButton9.Location = new System.Drawing.Point(257, 262);
+            this.radioButton9.Name = "radioButton9";
+            this.radioButton9.Size = new System.Drawing.Size(92, 20);
+            this.radioButton9.TabIndex = 12;
+            this.radioButton9.TabStop = true;
+            this.radioButton9.Text = "İlk 3 Değer";
+            this.radioButton9.UseVisualStyleBackColor = true;
+            // 
+            // radioButton10
+            // 
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Location = new System.Drawing.Point(257, 314);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(124, 20);
+            this.radioButton10.TabIndex = 13;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Ada Göre Sırala";
+            this.radioButton10.UseVisualStyleBackColor = true;
+            // 
+            // radioButton11
+            // 
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Location = new System.Drawing.Point(257, 288);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(103, 20);
+            this.radioButton11.TabIndex = 14;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Son 3 Değer";
+            this.radioButton11.UseVisualStyleBackColor = true;
+            // 
+            // radioButton12
+            // 
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Location = new System.Drawing.Point(257, 340);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(121, 20);
+            this.radioButton12.TabIndex = 15;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "İlk 5 Değeri Atla";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.radioButton12);
+            this.Controls.Add(this.radioButton11);
+            this.Controls.Add(this.radioButton10);
+            this.Controls.Add(this.radioButton9);
             this.Controls.Add(this.radioButton8);
             this.Controls.Add(this.radioButton7);
             this.Controls.Add(this.radioButton6);
@@ -206,5 +258,9 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radioButton9;
+        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radioButton12;
     }
 }
