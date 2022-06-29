@@ -75,6 +75,7 @@
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.radioButton9 = new System.Windows.Forms.RadioButton();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -539,11 +540,22 @@
             this.radioButton10.Text = "Sınav1 Ortalama Puan";
             this.radioButton10.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1121, 51);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 65);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "Form2.Show";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 703);
+            this.ClientSize = new System.Drawing.Size(1398, 703);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButton10);
             this.Controls.Add(this.radioButton9);
             this.Controls.Add(this.radioButton8);
@@ -633,6 +645,7 @@
         private System.Windows.Forms.RadioButton radioButton8;
         private System.Windows.Forms.RadioButton radioButton9;
         private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.Button button1;
     }
 }
 

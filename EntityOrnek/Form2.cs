@@ -37,7 +37,7 @@ namespace EntityOrnek
 
             if (radioButton3.Checked == true)
             {
-
+                //Adı veya Soyadı textbox dan al.
                 var degerler = db.TBLOGRENCİ.Where(x => x.AD == textBox1.Text || x.SOYAD==textBox1.Text);
                 dataGridView1.DataSource = degerler.ToList();
             }

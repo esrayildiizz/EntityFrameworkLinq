@@ -13,10 +13,28 @@ namespace EntityOrnek
 {
     public partial class Form1 : Form
     {
+
+        
+ 
+         Form2 frm = new Form2();  //Öncelikle bir değişken tanımlıyoruz...
+
+        //Yeni Form eklemek Project Menüsünden Add Windows Form'a tıklıyoruz,
+        //karşımıza gelen ekranda Add diyerek yeni bir Form ekliyoruz
+        //Project/Add Windows Form//Add
+
         public Form1()
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frm.Show(); //Button'a tıkladığımız zaman form2'ye geçmesini sağlıyoruz
+
+           
+        }
+
+
 
         DbSinavOgrenciEntities db = new DbSinavOgrenciEntities();
 
@@ -231,6 +249,8 @@ namespace EntityOrnek
                         };
             dataGridView1.DataSource = sorgu.ToList();
         }
+
+       
     }
 
 

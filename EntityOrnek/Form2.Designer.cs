@@ -33,6 +33,8 @@
             this.BtnLinqEntity = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,24 +72,48 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(627, 254);
+            this.label1.Location = new System.Drawing.Point(550, 236);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Adı veya Soyadı";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(677, 248);
+            this.textBox1.Location = new System.Drawing.Point(675, 236);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(93, 22);
             this.textBox1.TabIndex = 4;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(12, 262);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(112, 20);
+            this.radioButton2.TabIndex = 5;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Adı Ali Olanlar";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(12, 288);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(209, 20);
+            this.radioButton3.TabIndex = 6;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Adını veya Soyadını Textten Al";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnLinqEntity);
@@ -108,5 +134,7 @@
         private System.Windows.Forms.Button BtnLinqEntity;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }
