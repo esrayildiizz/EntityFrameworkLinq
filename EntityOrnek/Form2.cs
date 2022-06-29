@@ -26,6 +26,23 @@ namespace EntityOrnek
                 var degerler = db.TBLNOTLAR.Where(x => x.SINAV1 < 50);
                 dataGridView1.DataSource=degerler.ToList();
             }
+
+            if (radioButton2.Checked == true)
+            {
+
+               //TBLOGRENCİ tablosundan adı ali olanı getir.
+                var degerler = db.TBLOGRENCİ.Where(x => x.AD=="Ali");
+                dataGridView1.DataSource = degerler.ToList();
+            }
+
+            if (radioButton3.Checked == true)
+            {
+
+                var degerler = db.TBLOGRENCİ.Where(x => x.AD == textBox1.Text || x.SOYAD==textBox1.Text);
+                dataGridView1.DataSource = degerler.ToList();
+            }
+
+
         }
     }
 }
