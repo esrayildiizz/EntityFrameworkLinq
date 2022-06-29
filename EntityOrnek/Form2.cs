@@ -51,8 +51,15 @@ namespace EntityOrnek
 
             if (radioButton5.Checked == true)
             {
-                //Adı büyük soyadı küçük geir.
+                //Adı büyük soyadı küçük getir.
                 var degerler = db.TBLOGRENCİ.Select(x => new {Ad=x.AD.ToUpper(), Soyad = x.SOYAD.ToLower() });
+                dataGridView1.DataSource = degerler.ToList();
+            }
+
+            if (radioButton6.Checked == true)
+            {
+                //Adı büyük soyadı küçük getir.ve şartımşu ali haricindekileri getir.
+                var degerler = db.TBLOGRENCİ.Select(x => new { Ad = x.AD.ToUpper(), Soyad = x.SOYAD.ToLower() }).Where(x=>x.Ad !="ali");
                 dataGridView1.DataSource = degerler.ToList();
             }
         }
