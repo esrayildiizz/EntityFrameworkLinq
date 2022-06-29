@@ -17,14 +17,14 @@ namespace EntityOrnek
             InitializeComponent();
         }
 
-        DbSinavOgrenciEntities db = new DbSinavOgrenciEntities();
+        DbSinavOgrenciEntities db=new DbSinavOgrenciEntities(); 
         private void BtnLinqEntity_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked == true)
             {
-                //TBLNOTLAR a bir kısıtlama getirelim.
+                //TBLNOTLAR tablosuna kısıtlama getirdik.
                 var degerler = db.TBLNOTLAR.Where(x => x.SINAV1 < 50);
-                dataGridView1.DataSource = degerler.ToList();
+                dataGridView1.DataSource=degerler.ToList();
             }
         }
     }
