@@ -105,6 +105,14 @@ namespace EntityOrnek
                 dataGridView1.DataSource = degerler.ToList();
             }
 
+            if (radioButton11.Checked == true)
+            {
+                //Ada göre sırala
+                var degerler = db.TBLOGRENCİ.OrderBy(x => x.AD);
+                dataGridView1.DataSource = degerler.ToList();
+            }
+
+          
 
 
 
