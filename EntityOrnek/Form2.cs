@@ -77,9 +77,19 @@ namespace EntityOrnek
                     Durumu=x.DURUM==true ? "Geçti":"Kaldı"
                 });
                 dataGridView1.DataSource = degerler.ToList();
+
             }
 
-
+            if (radioButton8.Checked == true)
+            {
+                //Selectmany ile birleştirme işlemi yapıldı.
+                var degerler = db.TBLNOTLAR.SelectMany(x => db.TBLOGRENCİ.Where(y => y.ID == x.OGR), (x, y) => new
+                {
+                    y.AD,
+                    x.ORTALAMA,
+                });
+                 dataGridView1.DataSource = degerler.ToList();
+            }
 
 
 
