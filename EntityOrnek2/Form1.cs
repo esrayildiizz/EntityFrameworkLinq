@@ -57,9 +57,9 @@ namespace EntityOrnek2
 
 
             //Düşük stoğa ait değer getirme.
-            label1.Text = (from x in db.TBLURUN
-                           orderby x.STOK ascending
-                           select x.AD).First();
+            //label1.Text = (from x in db.TBLURUN
+            //               orderby x.STOK ascending
+            //               select x.AD).First();
 
 
 
