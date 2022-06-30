@@ -29,5 +29,6 @@ namespace EntityOrnek2
         public virtual DbSet<TBLKULUPLER> TBLKULUPLER { get; set; }
         public virtual DbSet<TBLNOTLAR> TBLNOTLAR { get; set; }
         public virtual DbSet<TBLOGRENCİ> TBLOGRENCİ { get; set; }
+        public virtual DbSet<TBLURUN> TBLURUN { get; set; }
     }
 }

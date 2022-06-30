@@ -28,8 +28,20 @@ namespace EntityOrnek2
 
             //Max|Min
             // label1.Text = db.TBLNOTLAR.Max(x => x.ORTALAMA).ToString(); 
+            //label1.Text = db.TBLNOTLAR.Min(x => x.SINAV1).ToString();
 
-            label1.Text = db.TBLNOTLAR.Min(x => x.SINAV1).ToString();
+            label1.Text = db.TBLURUN.Count().ToString();
+
+
+
+
+
+
+
+
+
+
+
         }
 
 
