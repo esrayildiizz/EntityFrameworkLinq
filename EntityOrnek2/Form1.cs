@@ -44,10 +44,15 @@ namespace EntityOrnek2
 
 
             //Average
-            label1.Text=db.TBLURUN.Average(x=>x.FIYAT).ToString();  
+            //label1.Text=db.TBLURUN.Average(x=>x.FIYAT).ToString();  
 
 
 
+
+            //Yüksek stoğa ait değerler getirme.
+            label1.Text = (from x in db.TBLURUN
+                           orderby x.STOK descending
+                           select x.AD).First();
 
 
 
