@@ -16,5 +16,12 @@ namespace EntityOrnek2
         {
             InitializeComponent();
         }
+        DbSinavOgrenciEntities db = new DbSinavOgrenciEntities();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var degerler = db.TBLOGRENCİ.OrderBy(x => x.SEHİR).GroupBy(y => y.SEHİR).
+                Select(z => new { Sehir = z.Key, Toplam = z.Count() });
+            dataGridView1.DataSource = degerler.ToList();
+        }
     }
 }
