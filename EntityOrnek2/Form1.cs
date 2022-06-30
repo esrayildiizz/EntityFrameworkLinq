@@ -34,12 +34,17 @@ namespace EntityOrnek2
 
             //Count
             //label1.Text = db.TBLURUN.Count().ToString();
+            //label1.Text=db.TBLURUN.Count(x=>x.AD=="BUZDOLABI").ToString();
+
 
 
             //Sum
-            label1.Text=db.TBLURUN.Sum(x=>x.STOK).ToString();   
+            //label1.Text=db.TBLURUN.Sum(x=>x.STOK).ToString();   
 
 
+
+            //Average
+            label1.Text=db.TBLURUN.Average(x=>x.FIYAT).ToString();  
 
 
 
