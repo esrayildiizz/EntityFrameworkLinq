@@ -49,14 +49,16 @@ namespace EntityOrnek2
 
 
 
-            //Yüksek stoğa ait değer getirme.
+            //Yüksek stoğa ait değer getirme.(descending)
             //label1.Text = (from x in db.TBLURUN
             //               orderby x.STOK descending
             //               select x.AD).First();
 
 
 
-            //Düşük stoğa ait değer getirme.
+
+
+            //Düşük stoğa ait değer getirme.(ascending)
             //label1.Text = (from x in db.TBLURUN
             //               orderby x.STOK ascending
             //               select x.AD).First();
